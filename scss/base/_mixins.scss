@@ -1,0 +1,39 @@
+@mixin ico-left($icon-path) {
+  position: relative;
+  padding-left: 20px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    transform: translate(0, -50%);
+
+    background-image: url($icon-path);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@mixin ico-right($icon-path) {
+  position: relative;
+  padding-right: 20px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    transform: translate(0, -50%);
+
+    background-image: url($icon-path);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}

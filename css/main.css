@@ -1,4 +1,5 @@
 /* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -106,4 +107,216 @@ label {
 
 legend {
   display: block;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.2;
+  background-color: #FFFFFF;
+}
+
+a {
+  color: #0000DE;
+  -webkit-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+a:hover {
+  color: #FFA500;
+}
+
+.container {
+  max-width: 1245px;
+  margin: 0 auto;
+}
+
+.visibility-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+  color: #000000;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0%;
+}
+
+.title-accent {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 0%;
+}
+
+.text-muted {
+  color: #6E9BB8;
+  line-height: 140%;
+  letter-spacing: 0%;
+  font-size: 12px;
+}
+
+.none {
+  display: none !important;
+}
+
+.btn-1 {
+  border-radius: 20px 0px 20px 0px;
+  padding: 14px 25px;
+  background: #0000DE;
+  color: #FFFFFF;
+  margin-right: 15px;
+}
+
+.btn-2 {
+  border-radius: 20px 0px 20px 0px;
+  padding: 14px 25px;
+  background: #FFFFFF;
+  color: #0000DE;
+}
+
+.header {
+  background-color: #F0F4F8;
+}
+
+.header__upon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 19px;
+  font-size: 12px;
+}
+.header__upon a {
+  color: #6E9BB8;
+}
+.header__upon a:hover {
+  color: #0000DE;
+}
+
+.header__upon-location {
+  position: relative;
+  padding-left: 20px;
+}
+.header__upon-location::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background-image: url("./../img/header/NavigationArrow.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.header__upon-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+
+.map-ico {
+  position: relative;
+  padding-right: 20px;
+}
+.map-ico::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background-image: url("./../img/header/Map.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.header__upon-language {
+  border-radius: 2px;
+  background: #FFFFFF;
+  padding: 3px;
+  border-radius: 2px;
+}
+
+.header__separating-line {
+  max-width: 1245px;
+  height: 1px;
+  background-color: #6E9BB8;
+}
+
+.header__top-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 30px;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 29px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 50px 0 50px;
+}
+
+.header__tel {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 110%;
+  position: relative;
+  padding-left: 20px;
+}
+.header__tel::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background-image: url("./../img/header/Phone.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }

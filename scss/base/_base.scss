@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+body {
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 16px;
+  color: $color-dark;
+  line-height: 1.2;
+  background-color: $color-white;
+}
+
+a {
+  color: $color-blue;
+  transition: color 0.3s ease-in;
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+.container {
+  max-width: 1245px;
+  // padding: 0 15px;
+  margin: 0 auto;
+}
+
+.visibility-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+  color: $color-dark;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0%;
+}
+
+.title-accent {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 0%;
+}
+
+.text-muted {
+  color: $color-muted;
+  line-height: 140%;
+  letter-spacing: 0%;
+  font-size: 12px;
+}
+
+.none {
+  display: none !important;
+}
+
+.btn-1 {
+  border-radius: 20px 0px 20px 0px;
+  padding: 14px 25px;
+  background: $color-blue;
+  color: $color-white;
+  margin-right: 15px;
+}
+
+.btn-2 {
+  border-radius: 20px 0px 20px 0px;
+  padding: 14px 25px;
+  background: $color-white;
+  color: $color-blue;
+}
