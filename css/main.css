@@ -493,22 +493,13 @@ a:hover {
   background-color: #F0F4F8;
   padding: 48px 0 10px 0;
 }
-.footer__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-bottom: 40px;
+.footer__wrapper {
+  display: grid;
+  gap: 70px;
+  grid-template-columns: 256px 1fr;
 }
 .footer__logo {
   max-height: 32px;
-  max-width: 156px;
-  margin-right: 200px;
 }
 .footer__search-bar {
   position: relative;
@@ -516,14 +507,7 @@ a:hover {
   padding: 15px 0 15px 15px;
 }
 .footer__search-bar input {
-  width: 835px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  border: none;
-  padding: 0;
   padding-left: 30px;
-  font-size: 14px;
   color: #6E9BB8;
 }
 .footer__search-bar input::-webkit-input-placeholder {
@@ -541,9 +525,6 @@ a:hover {
 .footer__search-bar input::placeholder {
   color: #6E9BB8;
 }
-.footer__search-bar input:focus {
-  outline: none;
-}
 .footer__search-bar::before {
   content: "";
   position: absolute;
@@ -555,18 +536,6 @@ a:hover {
   background-image: url(./../img/header/MagnifyingGlass.svg);
   background-repeat: no-repeat;
   background-position: center center;
-}
-.footer__main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 64px;
-}
-.footer__contacts {
-  max-width: 265px;
 }
 .footer__tel {
   font-size: 37px;
@@ -602,15 +571,9 @@ a:hover {
   background: #FFFFFF;
 }
 .footer__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 60px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 .footer__nav-column {
   min-width: 140px;

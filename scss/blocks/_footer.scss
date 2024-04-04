@@ -2,17 +2,15 @@
   background-color: $color-hf;
   padding: 48px 0 10px 0;
 
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 40px;
+  &__wrapper{
+    display: grid;
+    gap: 70px;
+
+    grid-template-columns: 256px 1fr; 
   }
 
   &__logo {
     max-height: 32px;
-    max-width: 156px;
-    margin-right: 200px;
   }
 
   &__search-bar {
@@ -21,23 +19,12 @@
     padding: 15px 0 15px 15px;
 
     input {
-      width: 835px;
-
-      flex-grow: 1;
-      border: none;
-      padding: 0;
       padding-left: 30px;
-      font-size: 14px;
       color: $color-muted;
 
       &::placeholder {
         color: $color-muted;
       }
-
-      &:focus {
-        outline: none;
-      }
-
     }
     
   
@@ -54,18 +41,6 @@
       background-repeat: no-repeat;
       background-position: center center;
     }
-  }
-
-  &__main {
-    display: flex;
-
-    justify-content: space-between;
-    margin-bottom: 64px;
-  }
-
-
-  &__contacts {
-    max-width: 265px;
   }
 
   &__tel {
@@ -107,10 +82,9 @@
   }
 
   &__nav {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 60px;
-    flex-wrap: wrap;
   }
 
   &__nav-column {
