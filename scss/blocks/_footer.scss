@@ -1,0 +1,161 @@
+.footer {
+  background-color: $color-hf;
+  padding: 48px 0 10px 0;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+  }
+
+  &__logo {
+    max-height: 32px;
+    max-width: 156px;
+    margin-right: 200px;
+  }
+
+  &__search-bar {
+    position: relative;
+    background-color: $color-white;
+    padding: 15px 0 15px 15px;
+
+    input {
+      width: 835px;
+
+      flex-grow: 1;
+      border: none;
+      padding: 0;
+      padding-left: 30px;
+      font-size: 14px;
+      color: $color-muted;
+
+      &::placeholder {
+        color: $color-muted;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+    }
+    
+  
+    &::before {
+      content: "";
+  
+      position: absolute;
+      top: 50%;
+      width: 20px;
+      height: 20px;
+      transform: translate(0, -50%);
+  
+      background-image: url(./../img/header/MagnifyingGlass.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+
+  &__main {
+    display: flex;
+
+    justify-content: space-between;
+    margin-bottom: 64px;
+  }
+
+
+  &__contacts {
+    max-width: 265px;
+  }
+
+  &__tel {
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 110%;
+  }
+
+  &__email {
+    display: block;
+    color: $color-muted;
+    font-size: 12px;
+    margin-bottom: 45px;
+  }
+
+  &__location {
+    color: $color-muted;
+
+    font-size: 12px;
+    margin-bottom: 45px;
+
+    span {
+      display: block;
+      color: $color-blue;
+      font-size: 18px;
+      margin-bottom: 7px;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 16px;
+
+    a {
+      padding: 10px;
+      border-radius: 6px;
+      background: $color-white;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+
+  &__nav-column {
+    min-width: 140px;
+
+    li {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__nav-title {
+    color: $color-blue;
+    font-size: 20px;
+
+    margin-bottom: 34px;
+  }
+
+  &__nav a {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $color-dark;
+
+    &:hover {
+      color: $color-blue;
+    }
+  }
+
+  &__disclaimer {
+    font-size: 12px;
+    color: $color-muted;
+    margin-bottom: 60px;
+
+    h6 {
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    gap: 20px;
+    color: $color-muted;
+    font-size: 12px;
+  }
+}
