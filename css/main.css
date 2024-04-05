@@ -614,3 +614,70 @@ a:hover {
   color: #6E9BB8;
   font-size: 12px;
 }
+
+.useful-info {
+  margin-bottom: 100px;
+}
+.useful-info__card {
+  position: relative;
+  background: #F0F4F8;
+  border: 1px solid #ddd;
+  padding: 25px 30px;
+  border-radius: 10px;
+}
+.useful-info__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.useful-info__list li {
+  position: relative;
+  padding-left: 20px;
+}
+.useful-info__list li::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background-image: url("../img/useful-info/CaretRight.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.useful-info__list li::before {
+  width: 32px;
+  height: 32px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.useful-info__card-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.useful-info__upon-title {
+  color: #6E9BB8;
+  margin-bottom: 10px;
+}
+.useful-info__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 15px;
+}
+.useful-info__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 15px;
+}
+.useful-info__title {
+  margin-bottom: 30px;
+}

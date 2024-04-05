@@ -1,0 +1,57 @@
+.useful-info {
+  margin-bottom: 100px;
+
+  &__card {
+    position: relative;
+    background: $color-hf;
+    border: 1px solid #ddd;
+    padding: 25px 30px;
+    border-radius: 10px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    li {
+      @include ico-left("../img/useful-info/CaretRight.svg");
+
+      &::before {
+        width: 32px;
+        height: 32px;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  &__card-title {
+    font-size: 22px;
+    font-weight: 700;
+
+    margin-bottom: 30px;
+  }
+
+  &__upon-title {
+    color: $color-muted;
+
+    margin-bottom: 10px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 15px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+}
