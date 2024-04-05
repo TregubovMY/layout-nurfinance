@@ -18,4 +18,4 @@ css_job:
   only:
     - merge_requests
   script:
-    - csslint *.css
+    - csslint css/*.css
