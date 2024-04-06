@@ -209,6 +209,108 @@
       </div>
     </section>
 
+    <section class="calculator">
+        <div class="calculator__header">
+          <div class="container">
+            <nav class="calculator__nav">
+              <a class="calculator__nav-link" href="#">
+                <img src="./img/calculator/CaretDoubleRigh.svg" alt="Инвестиции" />
+                <p>Инвестиционные<br />вклады Нурфинанс</p>
+              </a>
+              <a class="calculator__nav-link" href="#">
+                <img src="./img/calculator/Cart.svg" alt="Рассрочка" />
+                <p>Потребительская<br />рассрочка Нурфинанс</p>
+              </a>
+            </nav>
+          </div>
+        </div>
+
+      <div class="calculator__border">
+        <div class="container">
+          <div class="calculator__title">
+            <h2 class="title">Рассчитай свои<br>накопления и доход</h2>
+          </div>
+          <div class="calculator__inner">
+            <div class="calculator__inputs">
+              <div class="calculator__input-block">
+                <p class="calculator__input-block-title">Сумма вклада</p>
+                <div class="calculator__range">
+                  <input
+                    type="range"
+                    name="sum"
+                    min="500000"
+                    max="10000000"
+                    value="1000000"
+                  />
+                </div>
+                <p class="calculator__input-block-value">1 000 000 ₽</p>
+              </div>
+
+              <div class="calculator__input-block">
+                <p class="calculator__input-block-title">Срок инвестирования</p>
+                <div class="calculator__range">
+                  <input type="range" name="term" min="3" max="60" value="24" />
+                </div>
+                <p class="calculator__input-block-value">24 месяца</p>
+              </div>
+
+              <div class="calculator__input-block">
+                <p class="calculator__input-block-title">
+                  Порядок выплаты дохода
+                </p>
+
+                <div class="calculator__radio">
+                  <input id="radio-1" type="radio" name="pay-type" checked />
+                  <label for="radio-1">Ежемесячно</label>
+
+                  <input id="radio-2" type="radio" name="pay-type" />
+                  <label for="radio-2">В конце срока</label>
+                </div>
+
+              </div>
+
+              <div class="calculator__input-block">
+                <p class="calculator__input-block-title">Пополнение вклада</p>
+                <div class="calculator__range">
+                  <input
+                    type="range"
+                    name="top-up"
+                    min="0"
+                    max="100000"
+                    value="30000"
+                  />
+                </div>
+                <p class="calculator__input-block-value">30 000 ₽ <span>/ в месяц</span></p>
+              </div>
+            </div>
+
+            <img src="./img/calculator/Frame.svg" alt="Frame">
+
+            <div class="calculator__result">
+              <div class="calculator__result-block">
+                <p class="calculator__result-title">Доходность</p>
+                <p class="calculator__result-value">12,5%</p>
+              </div>
+
+              <div class="calculator__result-block">
+                <p class="calculator__result-title">Сумма дохода</p>
+                <p class="calculator__result-value">282 366 ₽</p>
+              </div>
+
+              <div class="calculator__result-block">
+                <p class="calculator__result-title">Итоговая сумма</p>
+                <p class="calculator__result-value">1 282 366 ₽</p>
+              </div>
+
+              <button class="calculator__result-button btn-1">
+                Инвестировать
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="reviews">
       <div class="container">
         <div class="reviews__title">
@@ -216,48 +318,73 @@
         </div>
       </div>
 
-      <div class="reviews__inner">
-        <div class="reviews__slider">
-          <!-- <button class="reviews__slider-btn reviews__slider-btn_prev"></button> -->
-          <div class="reviews-swiper">
-            <div class="reviews__slider-card">
-              <img class="reviews__slider-card-img" src="./img/reviews/1.png" alt="Отзыв Евгения Садкова" />
-              <img class="reviews__slider-card-btn" src="./img/reviews/play-btn.svg" alt="Video-btn" />
+      <div class="reviews__border">
+        <div class="reviews__inner">
+          <div class="reviews__slider">
+            <!-- <button class="reviews__slider-btn reviews__slider-btn_prev"></button> -->
+            <div class="reviews-swiper">
+              <div class="reviews__slider-card">
+                <img
+                  class="reviews__slider-card-img"
+                  src="./img/reviews/1.png"
+                  alt="Отзыв Евгения Садкова"
+                />
+                <img
+                  class="reviews__slider-card-btn"
+                  src="./img/reviews/play-btn.svg"
+                  alt="Video-btn"
+                />
 
-              <div class="reviews__slider-card-name">Евгений Садков</div>
+                <div class="reviews__slider-card-name">Евгений Садков</div>
 
-              <div class="reviews__slider-card-program">
-                Программа – Экспресс Рассрочка
+                <div class="reviews__slider-card-program">
+                  Программа – Экспресс Рассрочка
+                </div>
+              </div>
+
+              <div class="reviews__slider-card">
+                <img
+                  class="reviews__slider-card-img"
+                  src="./img/reviews/2.png"
+                  alt="Отзыв Евгения Садкова"
+                />
+                <img
+                  class="reviews__slider-card-btn"
+                  src="./img/reviews/play-btn.svg"
+                  alt="Video-btn"
+                />
+
+                <div class="reviews__slider-card-name">Анастасия Майер</div>
+
+                <div class="reviews__slider-card-program">
+                  Инвестиции – Вклад Активный
+                </div>
+              </div>
+
+              <div class="reviews__slider-card">
+                <img
+                  class="reviews__slider-card-img"
+                  src="./img/reviews/3.png"
+                  alt="Отзыв Евгения Садкова"
+                />
+                <img
+                  class="reviews__slider-card-btn"
+                  src="./img/reviews/play-btn.svg"
+                  alt="Video-btn"
+                />
+
+                <div class="reviews__slider-card-name">Фаниль Гарипов</div>
+
+                <div class="reviews__slider-card-program">
+                  Программа – Авто Рассрочка
+                </div>
               </div>
             </div>
-
-            <div class="reviews__slider-card">
-              <img class="reviews__slider-card-img" src="./img/reviews/2.png" alt="Отзыв Евгения Садкова" />
-              <img class="reviews__slider-card-btn" src="./img/reviews/play-btn.svg" alt="Video-btn" />
-
-              <div class="reviews__slider-card-name">Анастасия Майер</div>
-
-              <div class="reviews__slider-card-program">
-                Инвестиции – Вклад Активный
-              </div>
-            </div>
-
-            <div class="reviews__slider-card">
-              <img class="reviews__slider-card-img" src="./img/reviews/3.png" alt="Отзыв Евгения Садкова" />
-              <img class="reviews__slider-card-btn" src="./img/reviews/play-btn.svg" alt="Video-btn" />
-
-
-              <div class="reviews__slider-card-name">Фаниль Гарипов</div>
-
-              <div class="reviews__slider-card-program">
-                Программа – Авто Рассрочка
-              </div>
-            </div>
+            <!-- <button class="reviews__slider-btn reviews__slider-btn_next"></button> -->
           </div>
-          <!-- <button class="reviews__slider-btn reviews__slider-btn_next"></button> -->
-        </div>
 
-        <a href="#" class="reviews__more"> Смотреть больше отзывов </a>
+          <a href="#" class="reviews__more"> Смотреть больше отзывов </a>
+        </div>
       </div>
     </section>
 

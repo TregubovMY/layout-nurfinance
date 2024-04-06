@@ -1,0 +1,69 @@
+<svg width="396.000000" height="428.000000" viewBox="0 0 396 428" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip16_371">
+			<rect id="Frame" width="390.230011" height="374.000000" transform="translate(5.000000 0.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient id="paint_linear_16_365_0" x1="4.500031" y1="0.000000" x2="4.500031" y2="428.000000" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#C6D9E9" stop-opacity="0.000000"/>
+			<stop offset="0.494792" stop-color="#C6D9E9"/>
+			<stop offset="1.000000" stop-color="#C6D9E9" stop-opacity="0.000000"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_16_366_0" x1="69.500031" y1="0.000000" x2="69.500031" y2="428.000000" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#C6D9E9" stop-opacity="0.000000"/>
+			<stop offset="0.494792" stop-color="#C6D9E9"/>
+			<stop offset="1.000000" stop-color="#C6D9E9" stop-opacity="0.000000"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_16_367_0" x1="134.500031" y1="0.000000" x2="134.500031" y2="428.000000" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#C6D9E9" stop-opacity="0.000000"/>
+			<stop offset="0.494792" stop-color="#C6D9E9"/>
+			<stop offset="1.000000" stop-color="#C6D9E9" stop-opacity="0.000000"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_16_368_0" x1="199.500031" y1="0.000000" x2="199.500031" y2="428.000000" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#C6D9E9" stop-opacity="0.000000"/>
+			<stop offset="0.494792" stop-color="#C6D9E9"/>
+			<stop offset="1.000000" stop-color="#C6D9E9" stop-opacity="0.000000"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_16_369_0" x1="264.500031" y1="0.000000" x2="264.500031" y2="428.000000" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#C6D9E9" stop-opacity="0.000000"/>
+			<stop offset="0.494792" stop-color="#C6D9E9"/>
+			<stop offset="1.000000" stop-color="#C6D9E9" stop-opacity="0.000000"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_16_370_0" x1="329.500031" y1="0.000000" x2="329.500031" y2="428.000000" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#C6D9E9" stop-opacity="0.000000"/>
+			<stop offset="0.494792" stop-color="#C6D9E9"/>
+			<stop offset="1.000000" stop-color="#C6D9E9" stop-opacity="0.000000"/>
+		</linearGradient>
+	</defs>
+	<rect id="Rectangle 1" x="4.000000" width="1.000000" height="428.000000" fill="url(#paint_linear_16_365_0)" fill-opacity="1.000000"/>
+	<rect id="Rectangle 2" x="69.000000" width="1.000000" height="428.000000" fill="url(#paint_linear_16_366_0)" fill-opacity="1.000000"/>
+	<rect id="Rectangle 3" x="134.000000" width="1.000000" height="428.000000" fill="url(#paint_linear_16_367_0)" fill-opacity="1.000000"/>
+	<rect id="Rectangle 4" x="199.000000" width="1.000000" height="428.000000" fill="url(#paint_linear_16_368_0)" fill-opacity="1.000000"/>
+	<rect id="Rectangle 5" x="264.000000" width="1.000000" height="428.000000" fill="url(#paint_linear_16_369_0)" fill-opacity="1.000000"/>
+	<rect id="Rectangle 6" x="329.000000" width="1.000000" height="428.000000" fill="url(#paint_linear_16_370_0)" fill-opacity="1.000000"/>
+	<rect id="Frame" width="390.230011" height="374.000000" transform="translate(5.000000 0.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip16_371)">
+		<g opacity="0.100000">
+			<path id="Vector" d="M320.25 306.85C287 326.35 247 341.9 201.48 353C156.86 363.92 106.74 370.59 52.05 373L374.05 373C379.4 373 384.53 370.87 388.31 367.09C392.09 363.31 394.22 358.17 394.22 352.83L394.22 241C390 248 370.13 277.64 320.25 306.85Z" fill="#355DFB" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</g>
+		<g opacity="0.100000">
+			<path id="Vector" d="M224.6 288.26C167.52 328.44 97.84 356.56 17.36 371.93C85.46 371.23 147.14 364.25 200.84 351.13C246.16 340.06 285.94 324.62 319.06 305.24C375.42 272.24 393.17 238.87 393.34 238.54C393.42 238.37 393.55 238.24 393.71 238.15C393.86 238.05 394.04 238 394.23 238.01L394.23 11.16C391.3 34.82 380.23 96.82 340.85 163.16C311.41 212.63 271.78 255.28 224.6 288.26Z" fill="#0000DE" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</g>
+		<path id="Vector" d="M6 373C325 373 394.23 239 394.23 239" stroke="#355DFB" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linecap="round"/>
+		<path id="Vector" d="M6 373C379 308 394.23 1 394.23 1" stroke="#0000DE" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linecap="round"/>
+	</g>
+	<circle id="Ellipse 1" cx="5.000000" cy="372.000000" r="5.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+	<circle id="Ellipse 1" cx="5.000000" cy="372.000000" r="4.000000" stroke="#0000DE" stroke-opacity="1.000000" stroke-width="2.000000"/>
+	<circle id="Ellipse 19" cx="69.000000" cy="359.000000" r="5.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+	<circle id="Ellipse 19" cx="69.000000" cy="359.000000" r="4.000000" stroke="#0000DE" stroke-opacity="1.000000" stroke-width="2.000000"/>
+	<circle id="Ellipse 20" cx="135.000000" cy="336.000000" r="5.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+	<circle id="Ellipse 20" cx="135.000000" cy="336.000000" r="4.000000" stroke="#0000DE" stroke-opacity="1.000000" stroke-width="2.000000"/>
+	<circle id="Ellipse 21" cx="199.000000" cy="304.000000" r="5.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+	<circle id="Ellipse 21" cx="199.000000" cy="304.000000" r="4.000000" stroke="#0000DE" stroke-opacity="1.000000" stroke-width="2.000000"/>
+	<circle id="Ellipse 22" cx="265.000000" cy="254.000000" r="5.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+	<circle id="Ellipse 22" cx="265.000000" cy="254.000000" r="4.000000" stroke="#0000DE" stroke-opacity="1.000000" stroke-width="2.000000"/>
+	<circle id="Ellipse 23" cx="329.000000" cy="180.000000" r="5.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+	<circle id="Ellipse 23" cx="329.000000" cy="180.000000" r="4.000000" stroke="#0000DE" stroke-opacity="1.000000" stroke-width="2.000000"/>
+</svg>
