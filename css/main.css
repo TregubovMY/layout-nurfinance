@@ -109,6 +109,24 @@ legend {
   display: block;
 }
 
+/* Define the scrollbar style */
+.body::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Define the thumb style */
+.body::-webkit-scrollbar-thumb {
+  background: #0000DE;
+  border-radius: 5px;
+}
+
+/* Define the track style */
+.body::-webkit-scrollbar-track {
+  background-color: #F0F4F8;
+  border-radius: 5px;
+}
+
 body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
@@ -186,6 +204,63 @@ a:hover {
   color: #0000DE;
 }
 
+.radiobtn {
+  position: relative;
+  display: block;
+}
+.radiobtn label {
+  display: block;
+  background: #F0F4F8;
+  border-radius: 20px 0;
+  padding: 13px 70px 13px 45px;
+  border: 2px solid #C6D9E9;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.radiobtn label:after, .radiobtn label:before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #C6D9E9;
+  border-radius: 2px;
+  background: #F0F4F8;
+}
+.radiobtn label:before {
+  background: transparent;
+  -webkit-transition: 0.1s width cubic-bezier(0.075, 0.82, 0.165, 1) 0s, 0.3s height cubic-bezier(0.075, 0.82, 0.165, 2) 0.1s;
+  transition: 0.1s width cubic-bezier(0.075, 0.82, 0.165, 1) 0s, 0.3s height cubic-bezier(0.075, 0.82, 0.165, 2) 0.1s;
+  z-index: 2;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 13px;
+  background-position: center;
+  width: 0;
+  height: 0;
+  background-image: url("../img/Check.svg");
+}
+.radiobtn input[type=radio] {
+  display: none;
+  position: absolute;
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.radiobtn input[type=radio]:checked + label {
+  background: #FFFFFF;
+}
+.radiobtn input[type=radio]:checked + label:after {
+  background: #FFFFFF;
+}
+.radiobtn input[type=radio]:checked + label:before {
+  width: 20px;
+  height: 20px;
+}
+
+/* ... rest of the CSS ... */
 .header {
   background-color: #F0F4F8;
 }
@@ -435,7 +510,18 @@ a:hover {
 }
 
 .product-cart__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 405px;
+  height: 100%;
 }
 
 .product-cart__subtitle {
@@ -804,7 +890,15 @@ a:hover {
   margin-top: 30px;
 }
 .calculator__input-block {
-  margin-bottom: 40px;
+  position: relative;
+  padding-bottom: 40px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .calculator__input-block-title {
   font-size: 12px;
@@ -820,8 +914,82 @@ a:hover {
 .calculator__input-block-value span {
   font-weight: 400;
 }
-.calculator__range input {
+.calculator__radio-block {
+  padding-bottom: 40px;
+  margin-bottom: 10px;
+}
+.calculator__range {
+  position: absolute;
   width: 100%;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+.calculator__range input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
+  width: 100%;
+  height: 8px;
+  background-color: #d5d5d5;
+  border-radius: 8px;
+  outline: none;
+}
+.calculator__range input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 8px;
+}
+.calculator__range input[type=range]::-moz-track {
+  -moz-appearance: none;
+  height: 8px;
+}
+.calculator__range input[type=range]::-ms-track {
+  appearance: none;
+  height: 8px;
+}
+.calculator__range input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 30px;
+  width: 30px;
+  background-color: #FFFFFF;
+  border: 12px solid #0000DE;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -10px;
+}
+.calculator__range input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 30px;
+  width: 30px;
+  background-color: #FFFFFF;
+  border: 12px solid #0000DE;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -10px;
+}
+.calculator__range input[type=range]::-ms-thumb {
+  appearance: none;
+  height: 30px;
+  width: 30px;
+  background-color: #FFFFFF;
+  border: 12px solid #0000DE;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -10px;
+}
+.calculator__range input[type=range]:active::-webkit-slider-thumb {
+  background-color: #ffffff;
+  border: 3px solid #0000DE;
+}
+.calculator__range #slider-value {
+  width: 13%;
+  position: relative;
+  background-color: #0000DE;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  padding: 10px 0;
+  border-radius: 5px;
 }
 .calculator__radio {
   display: -webkit-box;

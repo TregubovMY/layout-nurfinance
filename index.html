@@ -6,7 +6,7 @@
     <title>Нурфинанс</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <div class="header_top">
         <div class="container">
@@ -240,35 +240,69 @@
                 <div class="calculator__range">
                   <input
                     type="range"
+                    id="my-slider-1"
                     name="sum"
                     min="500000"
                     max="10000000"
                     value="1000000"
+                    oninput="slider(mySlider_1, sliderValue_1)"
                   />
                 </div>
-                <p class="calculator__input-block-value">1 000 000 ₽</p>
+                <p>
+                  <span
+                    class="calculator__input-block-value"
+                    id="slider-value-1"
+                  >
+                    1 000 000
+                  </span>
+                  <span class="calculator__input-block-value">₽</span>
+                </p>
               </div>
 
               <div class="calculator__input-block">
                 <p class="calculator__input-block-title">Срок инвестирования</p>
                 <div class="calculator__range">
-                  <input type="range" name="term" min="3" max="60" value="24" />
+                  <input
+                    type="range"
+                    id="my-slider-2"
+                    name="term"
+                    min="3"
+                    max="60"
+                    value="24"
+                    oninput="slider(mySlider_2, sliderValue_2)"
+                  />
                 </div>
-                <p class="calculator__input-block-value">24 месяца</p>
+                <p>
+                  <span
+                    class="calculator__input-block-value"
+                    id="slider-value-2"
+                  >
+                    24
+                  </span>
+                  <span class="calculator__input-block-value">месяца</span>
+                </p>
               </div>
 
-              <div class="calculator__input-block">
+              <div class="calculator__radio-block">
                 <p class="calculator__input-block-title">
                   Порядок выплаты дохода
                 </p>
 
-                <div class="calculator__radio">
-                  <input id="radio-1" type="radio" name="pay-type" checked />
-                  <label for="radio-1">Ежемесячно</label>
-
-                  <input id="radio-2" type="radio" name="pay-type" />
-                  <label for="radio-2">В конце срока</label>
-                </div>
+                <form class="calculator__radio">
+                  <div class="radiobtn">
+                    <input
+                      id="radio-1"
+                      type="radio"
+                      name="pay-type"
+                      checked
+                    />
+                    <label for="radio-1">Ежемесячно</label>
+                  </div>
+                  <div class="radiobtn">
+                    <input id="radio-2" type="radio" name="pay-type" />
+                    <label for="radio-2">В конце срока</label>
+                  </div>
+                </form>
               </div>
 
               <div class="calculator__input-block">
@@ -276,14 +310,23 @@
                 <div class="calculator__range">
                   <input
                     type="range"
+                    id="my-slider-3"
                     name="top-up"
                     min="0"
                     max="100000"
                     value="30000"
+                    oninput="slider(mySlider_3, sliderValue_3)"
                   />
                 </div>
-                <p class="calculator__input-block-value">
-                  30 000 ₽ <span>/ в месяц</span>
+                <p>
+                  <span
+                    class="calculator__input-block-value"
+                    id="slider-value-3"
+                  >
+                    30 000
+                  </span>
+                  <span class="calculator__input-block-value">₽</span>
+                  <span>/ в месяц</span>
                 </p>
               </div>
             </div>
@@ -323,7 +366,7 @@
         <div class="possibilities__inner">
           <div class="possibilities__info">
             <div class="possibilities__info-block">
-                <img src="./../img/possibilities/Coin.svg" alt="Icon" />
+              <img src="./../img/possibilities/Coin.svg" alt="Icon" />
               <p class="possibilities__info-block-title">
                 Накапливайте, принося пользу окружающим (обществу)
               </p>
@@ -402,14 +445,26 @@
             <div class="possibilities__return__separating-line"></div>
             <div class="possibilities__return-inner">
               <div class="possibilities__return-block">
-                <p class="possibilities__return-title"><span>НурФинанс</span> высокая ликвидность</p>
-                <p class="possibilities__return-subtitle possibilities__return-subtitle_muted">Срок возврата от 3 месяцев</p>
-                <img src="./img/possibilities/line-1.svg" alt="progress-bar">
+                <p class="possibilities__return-title">
+                  <span>НурФинанс</span> высокая ликвидность
+                </p>
+                <p
+                  class="possibilities__return-subtitle possibilities__return-subtitle_muted"
+                >
+                  Срок возврата от 3 месяцев
+                </p>
+                <img src="./img/possibilities/line-1.svg" alt="progress-bar" />
               </div>
               <div class="possibilities__return-block">
-                <p class="possibilities__return-title"><span>Недвижимость</span> низкая ликвидность</p>
-                <p class="possibilities__return-subtitle possibilities__return-subtitle_blue">Срок возврата от 3 месяцев</p>
-                <img src="./img/possibilities/line-2.svg" alt="progress-bar">
+                <p class="possibilities__return-title">
+                  <span>Недвижимость</span> низкая ликвидность
+                </p>
+                <p
+                  class="possibilities__return-subtitle possibilities__return-subtitle_blue"
+                >
+                  Срок возврата от 3 месяцев
+                </p>
+                <img src="./img/possibilities/line-2.svg" alt="progress-bar" />
               </div>
             </div>
           </div>
@@ -687,5 +742,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -2,9 +2,11 @@
 @import './base/reset';
 @import './base/vars';
 @import './base/mixins';
+@import './base/scroll';
 @import './base/base';
 
 // Blocks
+@import './blocks/input';
 @import './blocks/nav';
 @import './blocks/header';
 @import './blocks/recommendations';

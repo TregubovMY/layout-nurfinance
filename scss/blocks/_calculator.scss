@@ -57,7 +57,12 @@
   }
 
   &__input-block {
-    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 40px;
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: space-between;
 
     &-title {
       font-size: 12px;
@@ -77,10 +82,84 @@
     }
   }
 
+  &__radio-block{
+    padding-bottom: 40px;
+    margin-bottom: 10px;
+  }
+
   &__range {
-    input {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    right: 0;
+
+    input[type="range"]{
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      display: block;
       width: 100%;
-    }
+      height: 8px;
+      background-color: #d5d5d5;
+      border-radius: 8px;
+      outline: none;
+  }
+  input[type="range"]::-webkit-slider-runnable-track{
+      -webkit-appearance: none;
+      height: 8px;
+  }
+  input[type="range"]::-moz-track{
+      -moz-appearance: none;
+      height: 8px;
+  }
+  input[type="range"]::-ms-track{
+      appearance: none;
+      height: 8px;
+  }
+  input[type="range"]::-webkit-slider-thumb{
+      -webkit-appearance: none;
+      height: 30px;
+      width: 30px;
+      background-color: $color-white;
+      border: 12px solid $color-blue;
+      border-radius: 50%;
+      cursor: pointer;
+      margin-top: -10px;
+  }
+  input[type="range"]::-moz-range-thumb{
+      -webkit-appearance: none;
+      height: 30px;
+      width: 30px;
+      background-color: $color-white;
+      border: 12px solid $color-blue;
+      border-radius: 50%;
+      cursor: pointer;
+      margin-top: -10px;
+  }
+  input[type="range"]::-ms-thumb{
+      appearance: none;
+      height: 30px;
+      width: 30px;
+      background-color: $color-white;
+      border: 12px solid $color-blue;
+      border-radius: 50%;
+      cursor: pointer;
+      margin-top: -10px;
+  }
+  input[type="range"]:active::-webkit-slider-thumb{
+      background-color: #ffffff;
+      border: 3px solid $color-blue;
+  }
+  #slider-value{
+      width: 13%;
+      position: relative;
+      background-color: $color-blue;
+      color: #ffffff;
+      text-align: center;
+      font-family: "Roboto Mono",monospace;
+      padding: 10px 0;
+      border-radius: 5px;
+  }
   }
 
   &__radio {

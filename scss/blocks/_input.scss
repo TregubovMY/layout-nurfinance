@@ -1,0 +1,66 @@
+$inactive-color: #F0F4F8;
+$inactive-border-color: #C6D9E9;
+
+.radiobtn {
+  position: relative;
+  display: block;
+
+  label {
+    display: block;
+    background: $inactive-color;
+    border-radius: 20px 0;
+    padding: 13px 70px 13px 45px;
+    border: 2px solid $inactive-border-color;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+    &:after,
+    &:before {
+      content: "";
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      width: 20px;
+      height: 20px;
+      border: 2px solid $inactive-border-color;
+			border-radius: 2px;
+      background: $inactive-color; 
+    }
+
+    &:before {
+      background: transparent;
+      transition: 0.1s width cubic-bezier(0.075, 0.82, 0.165, 1) 0s,
+        0.3s height cubic-bezier(0.075, 0.82, 0.165, 2) 0.1s;
+      z-index: 2;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-size: 13px;
+      background-position: center;
+      width: 0;
+      height: 0;
+      background-image: url("../img/Check.svg");
+    }
+  }
+
+  input[type="radio"] {
+    display: none;
+    position: absolute;
+    width: 100%;
+    appearance: none;
+
+    &:checked + label {
+      background: $color-white;
+
+      &:after {
+        background: $color-white;
+      }
+
+      &:before {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+/* ... rest of the CSS ... */
