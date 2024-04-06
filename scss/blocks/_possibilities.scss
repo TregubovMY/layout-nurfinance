@@ -1,0 +1,205 @@
+.possibilities {
+  margin-bottom: 120px;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__sub-title {
+    font-size: 18px;
+    line-height: 120%;
+
+    &_1 {
+      margin-bottom: 20px;
+    }
+
+    &_2 {
+      margin-bottom: 80px;
+    }
+
+    &_3 {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 60px;
+  }
+
+  &__info {
+
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  &__info-block {
+    position: relative;
+
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  &__info-block-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.possibilities__chart {
+  display: flex;
+  flex-direction: column;
+
+  &-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    background: url("../img/possibilities/Cart-bg.svg") no-repeat center bottom;
+  }
+
+  &-names {
+    margin-left: 20px;
+    display: flex;
+    gap: 40px;
+  }
+
+  &-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &-title {
+    font-size: 18px;
+    line-height: 120%;
+  }
+}
+
+.pole {
+  border-radius: 18px 0px 18px 0px;
+  background: $color-hf;
+  width: 95px;
+
+  &_1 {
+    height: 33px;
+  }
+
+  &_2 {
+    height: 105px;
+    background: $color-blue;
+  }
+
+  &_3 {
+    height: 46px;
+  }
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+  &__title {
+    color: rgb(124, 131, 161);
+    font-size: 30px;
+    font-weight: 700;
+
+    &_blue {
+      color: $color-blue;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 5px;
+  }
+
+  &__name_blue {
+    color: $color-blue;
+  }
+}
+
+.chart-dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #6e9bb8;
+
+  &_blue {
+    background: $color-blue;
+  }
+}
+
+.possibilities__button {
+  margin-top: 70px;
+}
+
+.possibilities__return__separating-line {
+  max-width: 840px;
+  height: 1px;
+  background: linear-gradient(
+    180deg,
+    rgba(198, 217, 233, 0),
+    rgb(198, 217, 233) 49.479%,
+    rgba(198, 217, 233, 0) 100%
+  );
+}
+
+.possibilities__return-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.possibilities {
+  &__return {
+    grid-area: 2 / 2 / 3 / 4;
+  }
+
+  &__return-title {
+    font-size: 16px;
+    line-height: 120%;
+    margin: 10px 0;
+
+    span{
+      font-weight: 700;
+    }
+  }
+
+  &__return-subtitle {
+    @include ico-left("../img/possibilities/CheckCircle.svg");
+
+    color: rgb(124, 131, 161);
+    font-weight: 700;
+    line-height: 120%;
+    padding-left: 30px;
+    margin-bottom: 5px;
+
+    &_blue {
+      color: $color-blue;
+    }
+
+    &_muted {
+      color: $color-muted;
+    }
+
+    &::before {
+      width: 20px;
+      height: 20px;
+    }
+
+    &_muted::before {
+      background: url("../img/possibilities/UnCheckCircle.svg") no-repeat;
+    }
+  }
+}
