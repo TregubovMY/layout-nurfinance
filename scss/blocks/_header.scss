@@ -32,8 +32,10 @@
   }
 }
 .header__slider-inner {
+  max-width: 1245px;
   display: grid;
   grid-template-columns: 1fr minmax(0, 490px);
+  padding-right: 80px;
 }
 
 .header__slider-image {

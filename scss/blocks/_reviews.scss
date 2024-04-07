@@ -2,7 +2,10 @@
   margin-bottom: 124px;
 
   &__border {
+    position: relative;
+
     max-width: 1368px;
+    padding: 0 20px;
     background: $color-hf;
     border-radius: 120px 6px 120px 6px;
 
@@ -10,10 +13,7 @@
   }
 
   &__inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    margin: 0 auto;
     padding: 60px 60px 15px 60px;
   }
 
@@ -23,14 +23,6 @@
 
   &__slider {
     margin-bottom: 40px;
-  }
-
-  &__slider-btn {
-    &_prev {
-    }
-
-    &_next {
-    }
   }
 
   &__slider-card {
@@ -67,11 +59,9 @@
     background: $color-white;
     padding: 15px 100px;
   }
-}
 
-.reviews-swiper {
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+  &__btn{
+    max-width: 405px;
+    margin: 0 auto;
+  }
 }

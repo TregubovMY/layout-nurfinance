@@ -127,6 +127,65 @@ legend {
   border-radius: 5px;
 }
 
+.header-button-prev {
+  position: absolute;
+  content: "";
+  left: calc(50% + 540px);
+  bottom: 120px;
+  width: 40px;
+  height: 40px;
+  z-index: 9;
+  background-image: url("../img/sliders/header-button-prev.svg");
+}
+
+.header-button-next {
+  position: absolute;
+  content: "";
+  left: calc(50% + 590px);
+  bottom: 120px;
+  width: 40px;
+  height: 40px;
+  z-index: 9;
+  background-image: url("../img/sliders/header-button-next.svg");
+}
+
+.reviews-button-prev {
+  position: absolute;
+  content: "";
+  left: -40px;
+  top: 30%;
+  width: 80px;
+  height: 80px;
+  z-index: 9;
+  background-image: url("../img/sliders/reviews-button-prev.svg");
+}
+
+.reviews-button-next {
+  position: absolute;
+  content: "";
+  right: -40px;
+  top: 30%;
+  width: 80px;
+  height: 80px;
+  z-index: 9;
+  background-image: url("../img/sliders/reviews-button-next.svg");
+}
+
+.header__slider .swiper-pagination {
+  bottom: 123px !important;
+  left: 40% !important;
+  -webkit-transform: translate(-50%, 0) !important;
+          transform: translate(-50%, 0) !important;
+}
+
+.header__slider .swiper-pagination-bullet {
+  background-color: #5e6063;
+}
+
+.header__slider .swiper-pagination-bullet-active {
+  background-color: #0000DE;
+}
+
 body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
@@ -425,8 +484,10 @@ a:hover {
 }
 
 .header__slider-inner {
+  max-width: 1245px;
   display: grid;
   grid-template-columns: 1fr minmax(0, 490px);
+  padding-right: 80px;
 }
 
 .header__slider-image {
@@ -771,22 +832,15 @@ a:hover {
   margin-bottom: 124px;
 }
 .reviews__border {
+  position: relative;
   max-width: 1368px;
+  padding: 0 20px;
   background: #F0F4F8;
   border-radius: 120px 6px 120px 6px;
   margin: 0 auto;
 }
 .reviews__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 0 auto;
   padding: 60px 60px 15px 60px;
 }
 .reviews__title {
@@ -823,17 +877,9 @@ a:hover {
   background: #FFFFFF;
   padding: 15px 100px;
 }
-
-.reviews-swiper {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 15px;
+.reviews__btn {
+  max-width: 405px;
+  margin: 0 auto;
 }
 
 .calculator__header {

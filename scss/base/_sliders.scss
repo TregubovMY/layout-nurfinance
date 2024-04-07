@@ -1,0 +1,56 @@
+.header-button-prev {
+  position: absolute;
+  content: "";
+  left: calc(50% + 540px);
+  bottom: 120px;
+  width: 40px;
+  height: 40px;
+  z-index: 9;
+  background-image: url("../img/sliders/header-button-prev.svg");
+}
+
+.header-button-next {
+  position: absolute;
+  content: "";
+  left: calc(50% + 590px);
+  bottom: 120px;
+  width: 40px;
+  height: 40px;
+  z-index: 9;
+  background-image: url("../img/sliders/header-button-next.svg");
+}
+
+.reviews-button-prev {
+  position: absolute;
+  content: "";
+  left: -40px;
+  top: 30%;
+  width: 80px;
+  height: 80px;
+  z-index: 9;
+  background-image: url("../img/sliders/reviews-button-prev.svg");
+}
+
+.reviews-button-next {
+  position: absolute;
+  content: "";
+  right: -40px;
+  top: 30%;
+  width: 80px;
+  height: 80px;
+  z-index: 9;
+  background-image: url("../img/sliders/reviews-button-next.svg");
+}
+
+.header__slider .swiper-pagination{
+  bottom: 123px !important;
+  left: 40% !important;
+  transform: translate(-50%, 0) !important;
+}
+
+.header__slider .swiper-pagination-bullet{
+  background-color: #5e6063;
+}
+.header__slider .swiper-pagination-bullet-active{
+  background-color: $color-blue;
+}
