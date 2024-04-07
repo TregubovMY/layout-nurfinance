@@ -43,6 +43,7 @@
 }
 
 .header__slider .swiper-pagination{
+  z-index: 5;
   bottom: 123px !important;
   left: 40% !important;
   transform: translate(-50%, 0) !important;

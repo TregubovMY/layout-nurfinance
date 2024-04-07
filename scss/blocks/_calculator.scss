@@ -2,12 +2,11 @@
   &__header {
     position: relative;
   }
-
+  
   &__border {
     max-width: 1368px;
     background: $color-hf;
     border-radius: 64px 6px 64px 6px;
-
     margin: 0 auto;
     margin-bottom: 110px;
   }
@@ -16,8 +15,8 @@
     position: absolute;
     width: 100%;
     max-width: 1245px;
-
-    transform: translate(0, -50%);
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     gap: 15px;
     justify-content: space-between;
@@ -29,7 +28,6 @@
     gap: 20px;
     width: 100%;
     border-radius: 10px;
-
     background: $color-blue;
     color: $color-white;
     padding: 20px;
@@ -38,18 +36,14 @@
 
   &__inner {
     border-radius: 10px;
-
     display: grid;
     grid-template-columns: 460px 400px 300px;
-    // grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));;
     gap: 30px;
   }
 
   &__title {
-    padding-top: 170px;
+    padding-top: 140px;
     margin-bottom: 10px;
-    // margin-top: 170px;  ???
-    font-size: 34px;
   }
 
   &__inputs {
@@ -60,29 +54,28 @@
     position: relative;
     padding-bottom: 40px;
     margin-bottom: 10px;
-
     display: flex;
     justify-content: space-between;
-
-    &-title {
-      font-size: 12px;
-      line-height: 140%;
-      color: $color-muted;
-      margin-bottom: 10px;
-    }
-
-    &-value {
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 100%;
-
-      span {
-        font-weight: 400;
-      }
-    }
   }
 
-  &__radio-block{
+  &__input-block-title {
+    font-size: 12px;
+    line-height: 140%;
+    color: $color-muted;
+    margin-bottom: 10px;
+  }
+
+  &__input-block-value {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 100%;
+  }
+
+  &__input-block-value span {
+    font-weight: 400;
+  }
+
+  &__radio-block {
     padding-bottom: 40px;
     margin-bottom: 10px;
   }
@@ -93,92 +86,24 @@
     top: 50%;
     left: 0;
     right: 0;
-
-    input[type="range"]{
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      display: block;
-      width: 100%;
-      height: 8px;
-      background-color: #d5d5d5;
-      border-radius: 8px;
-      outline: none;
-  }
-  input[type="range"]::-webkit-slider-runnable-track{
-      -webkit-appearance: none;
-      height: 8px;
-  }
-  input[type="range"]::-moz-track{
-      -moz-appearance: none;
-      height: 8px;
-  }
-  input[type="range"]::-ms-track{
-      appearance: none;
-      height: 8px;
-  }
-  input[type="range"]::-webkit-slider-thumb{
-      -webkit-appearance: none;
-      height: 30px;
-      width: 30px;
-      background-color: $color-white;
-      border: 12px solid $color-blue;
-      border-radius: 50%;
-      cursor: pointer;
-      margin-top: -10px;
-  }
-  input[type="range"]::-moz-range-thumb{
-      -webkit-appearance: none;
-      height: 30px;
-      width: 30px;
-      background-color: $color-white;
-      border: 12px solid $color-blue;
-      border-radius: 50%;
-      cursor: pointer;
-      margin-top: -10px;
-  }
-  input[type="range"]::-ms-thumb{
-      appearance: none;
-      height: 30px;
-      width: 30px;
-      background-color: $color-white;
-      border: 12px solid $color-blue;
-      border-radius: 50%;
-      cursor: pointer;
-      margin-top: -10px;
-  }
-  input[type="range"]:active::-webkit-slider-thumb{
-      background-color: #ffffff;
-      border: 3px solid $color-blue;
-  }
-  #slider-value{
-      width: 13%;
-      position: relative;
-      background-color: $color-blue;
-      color: #ffffff;
-      text-align: center;
-      font-family: "Roboto Mono",monospace;
-      padding: 10px 0;
-      border-radius: 5px;
-  }
   }
 
   &__radio {
     display: flex;
     gap: 15px;
+  }
 
-    input {
-      display: block;
-      width: 20px;
-      height: 20px;
-      margin-right: 10px;
-    }
+  &__radio input {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
   }
 
   &__result {
     max-height: 374px;
     border-radius: 10px 10px 120px 10px;
     background: $color-white;
-
     padding: 25px 70px 30px 35px;
   }
 
@@ -192,8 +117,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
-
-    color: $color-muted;
   }
 
   &__result-value {

@@ -1,12 +1,11 @@
 .footer {
   background-color: $color-hf;
-  padding: 48px 0 10px 0;
+  padding: 48px 0 10px;
 
-  &__wrapper{
+  &__wrapper {
     display: grid;
     gap: 70px;
-
-    grid-template-columns: 256px 1fr; 
+    grid-template-columns: 265px 1fr;
   }
 
   &__logo {
@@ -19,27 +18,21 @@
     padding: 15px 0 15px 15px;
 
     input {
+      width: 100%;
       padding-left: 30px;
       color: $color-muted;
-
-      &::placeholder {
-        color: $color-muted;
-      }
     }
-    
-  
+
     &::before {
       content: "";
-  
       position: absolute;
       top: 50%;
       width: 20px;
       height: 20px;
       transform: translate(0, -50%);
-  
       background-image: url(./../img/header/MagnifyingGlass.svg);
       background-repeat: no-repeat;
-      background-position: center center;
+      background-position: center;
     }
   }
 
@@ -58,7 +51,6 @@
 
   &__location {
     color: $color-muted;
-
     font-size: 12px;
     margin-bottom: 45px;
 
@@ -98,7 +90,6 @@
   &__nav-title {
     color: $color-blue;
     font-size: 20px;
-
     margin-bottom: 34px;
   }
 

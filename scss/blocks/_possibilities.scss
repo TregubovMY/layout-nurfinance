@@ -24,24 +24,22 @@
 
   &__inner {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 60px;
   }
 
   &__info {
-
     font-size: 16px;
     line-height: 140%;
   }
 
   &__info-block {
     position: relative;
-
     display: flex;
     gap: 15px;
     margin-bottom: 25px;
 
-    &:last-child{
+    &:last-child {
       margin-bottom: 0;
     }
   }
@@ -53,41 +51,59 @@
     display: flex;
     align-items: center;
   }
-}
 
-.possibilities__chart {
-  display: flex;
-  flex-direction: column;
-
-  &-inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    margin-bottom: 20px;
-
-    background: url("../img/possibilities/Cart-bg.svg") no-repeat center bottom;
-  }
-
-  &-names {
-    margin-left: 20px;
+  &__chart {
     display: flex;
-    gap: 40px;
+    flex-direction: column;
+
+    &-inner {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 20px;
+      background: url("../img/possibilities/Cart-bg.svg") no-repeat center
+        bottom;
+    }
+
+    &-names {
+      margin-left: 20px;
+      display: flex;
+      gap: 40px;
+    }
+
+    &-name {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &-title {
+      font-size: 18px;
+      line-height: 120%;
+    }
   }
 
-  &-name {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  &__button {
+    margin-top: 70px;
   }
 
-  &-title {
-    font-size: 18px;
+  &__return {
+    grid-area: 2 / 2 / 3 / 4;
+  }
+
+  &__return-title {
+    font-size: 16px;
     line-height: 120%;
+    margin: 10px 0;
+
+    span {
+      font-weight: 700;
+    }
   }
 }
 
 .pole {
-  border-radius: 18px 0px 18px 0px;
+  border-radius: 18px 0 18px 0;
   background: $color-hf;
   width: 95px;
 
@@ -141,10 +157,6 @@
   }
 }
 
-.possibilities__button {
-  margin-top: 70px;
-}
-
 .possibilities__return__separating-line {
   max-width: 840px;
   height: 1px;
@@ -158,47 +170,31 @@
 
 .possibilities__return-inner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 50px;
 }
-.possibilities {
-  &__return {
-    grid-area: 2 / 2 / 3 / 4;
+
+.possibilities__return-subtitle {
+  @include ico-left("../img/possibilities/CheckCircle.svg");
+  color: rgb(124, 131, 161);
+  font-weight: 700;
+  line-height: 120%;
+  padding-left: 30px;
+  margin-bottom: 5px;
+
+  &::before {
+    width: 20px;
+    height: 20px;
   }
 
-  &__return-title {
-    font-size: 16px;
-    line-height: 120%;
-    margin: 10px 0;
-
-    span{
-      font-weight: 700;
-    }
+  &_blue {
+    color: $color-blue;
   }
 
-  &__return-subtitle {
-    @include ico-left("../img/possibilities/CheckCircle.svg");
-
-    color: rgb(124, 131, 161);
-    font-weight: 700;
-    line-height: 120%;
-    padding-left: 30px;
-    margin-bottom: 5px;
-
-    &_blue {
-      color: $color-blue;
-    }
-
-    &_muted {
-      color: $color-muted;
-    }
+  &_muted {
+    color: $color-muted;
 
     &::before {
-      width: 20px;
-      height: 20px;
-    }
-
-    &_muted::before {
       background: url("../img/possibilities/UnCheckCircle.svg") no-repeat;
     }
   }

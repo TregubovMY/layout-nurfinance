@@ -1,65 +1,66 @@
 .header {
   background-color: $color-hf;
-}
-.header__upon {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
 
-  padding-top: 20px;
-  padding-bottom: 19px;
+  &__upon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 19px;
+    font-size: 12px;
 
-  font-size: 12px;
+    a {
+      color: $color-muted;
 
-  a {
-    color: $color-muted;
+      &:hover {
+        color: $color-blue;
+      }
+    }
 
-    &:hover {
-      color: $color-blue;
+    &-location {
+      @include ico-left("./../img/header/NavigationArrow.svg");
+    }
+
+    &-nav {
+      display: flex;
+      gap: 24px;
+    }
+
+    &-language {
+      border-radius: 2px;
+      background: $color-white;
+      padding: 3px;
     }
   }
-}
-.header__upon-location {
-  @include ico-left("./../img/header/NavigationArrow.svg");
-}
-.header__upon-nav {
-  display: flex;
-  gap: 24px;
+
+  &__separating-line {
+    max-width: 1245px;
+    height: 1px;
+    background-color: $color-muted;
+  }
+
+  &__top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 50px;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 29px;
+    align-items: center;
+    padding: 0 50px;
+  }
+
+  &__tel {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 110%;
+
+    @include ico-left("./../img/header/Phone.svg");
+  }
 }
 
 .map-ico {
   @include ico-right("./../img/header/Map.svg");
-}
-.header__upon-language {
-  border-radius: 2px;
-  background: $color-white;
-  padding: 3px;
-  border-radius: 2px; 
-}
-.header__separating-line {
-  max-width: 1245px;
-  height: 1px;
-  background-color: $color-muted;
-}
-.header__top-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-
-  margin: 30px 0 50px 0;
-}
-.header__nav {
-  display: flex;
-  gap: 29px;
-  align-items: center;
-  padding: 0 50px 0 50px;
-}
-.header__tel {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 110%;
-
-  @include ico-left("./../img/header/Phone.svg");
 }
