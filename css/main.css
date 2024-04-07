@@ -804,6 +804,9 @@ a:hover {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+.useful-info__list a {
+  font-weight: 700;
+}
 .useful-info__card-title {
   font-size: 22px;
   font-weight: 700;
