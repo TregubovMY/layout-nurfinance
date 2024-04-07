@@ -5,12 +5,24 @@
   &__title {
     margin-top: 98px;
     margin-bottom: 30px;
+
+    @include mediaTablet {
+      margin-top: 50px;
+    }
   }
 
   &__carts {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(405px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+
+    @include mediaTablet {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include mediaMobile {
+      grid-template-columns: 1fr;
+    }
   }
 }
 
@@ -77,6 +89,11 @@
     grid-column: 1 / span 2;
     background-image: url("../img/recommendations/1.png");
     background-position: right 0 bottom 0;
+
+    @include mediaMobile {
+      grid-column: 1 / span 1;
+      background-position: left calc(50% + 225px) bottom 0;
+    }
   }
 
   &_2 {
@@ -101,5 +118,14 @@
     grid-column: 2 / span 2;
     background-image: url("../img/recommendations/4.png");
     background-position: right 0 bottom 0;
+
+    @include mediaTablet {
+      grid-column: 1 / span 2;
+    }
+
+    @include mediaMobile {
+      grid-column: 1 / span 1;
+      background-position: left calc(50% + 225px) bottom 0;
+    }
   }
 }

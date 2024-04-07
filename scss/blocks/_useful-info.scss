@@ -26,6 +26,10 @@
 
     a {
       font-weight: 700;
+
+      @include mediaMobile {
+          font-size: 14px;
+      }
     }
   }
 
@@ -34,17 +38,25 @@
     font-weight: 700;
 
     margin-bottom: 30px;
+
+    @include mediaMobile {
+      font-size: 18px;
+    }
   }
 
   &__upon-title {
     color: $color-muted;
 
     margin-bottom: 10px;
+
+    @include mediaMobile {
+      font-size: 14px;
+    }
   }
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 15px;
   }
 
@@ -57,5 +69,9 @@
 
   &__title {
     margin-bottom: 30px;
+
+    @include mediaMobile {
+      margin-bottom: 20px;
+    }
   }
 }

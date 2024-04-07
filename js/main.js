@@ -42,4 +42,18 @@ var swiper_1 = new Swiper(".reviews__slider", {
     nextEl: ".reviews-button-next",
     prevEl: ".reviews-button-prev",
   },
+  breakpoints: {
+    1265: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    796: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    }
+  }
 });

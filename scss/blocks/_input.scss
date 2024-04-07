@@ -1,5 +1,5 @@
-$inactive-color: #F0F4F8;
-$inactive-border-color: #C6D9E9;
+$inactive-color: #f0f4f8;
+$inactive-border-color: #c6d9e9;
 
 .radiobtn {
   position: relative;
@@ -23,8 +23,8 @@ $inactive-border-color: #C6D9E9;
       width: 20px;
       height: 20px;
       border: 2px solid $inactive-border-color;
-			border-radius: 2px;
-      background: $inactive-color; 
+      border-radius: 2px;
+      background: $inactive-color;
     }
 
     &:before {
@@ -39,6 +39,11 @@ $inactive-border-color: #C6D9E9;
       width: 0;
       height: 0;
       background-image: url("../img/Check.svg");
+    }
+
+    @include mediaMobile {
+      font-size: 14px;
+      padding: 13px 20px 13px 45px;
     }
   }
 

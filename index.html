@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Нурфинанс</title>
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.css" />
     <link
       rel="stylesheet"
@@ -123,7 +123,7 @@
       </div>
     </header>
 
-    <section class="recommendations">
+    <section class="recommendations none">
       <div class="container">
         <div class="recommendations__title">
           <h2 class="title">Рекомендуемые продукты</h2>
@@ -219,9 +219,9 @@
           <div class="product-cart product-cart_4">
             <div class="product-cart__container">
               <div class="product-cart__header">
-              <h4 class="product-cart__subtitle">Инвестиции</h4>
-              <h3 class="product-cart__title">Вклад Активный</h3>
-            </div>
+                <h4 class="product-cart__subtitle">Инвестиции</h4>
+                <h3 class="product-cart__title">Вклад Активный</h3>
+              </div>
               <div class="product-cart__top-info">
                 <div class="product-cart__offer">
                   <p class="product-cart__profit-num">16,5%</p>
@@ -250,7 +250,7 @@
       </div>
     </section>
 
-    <section class="calculator">
+    <section class="calculator none">
       <div class="calculator__header">
         <div class="container">
           <nav class="calculator__nav">
@@ -367,18 +367,21 @@
               </div>
             </div>
 
-            <img src="./img/calculator/Frame.svg" alt="Frame" />
+            <img class="calculator__frame" src="./img/calculator/Frame.svg" alt="Frame" />
 
             <div class="calculator__result">
-              <div class="calculator__result-block">
-                <p class="calculator__result-title">Доходность</p>
-                <p class="calculator__result-value">12,5%</p>
+              <div class="calculator__result-mobile">
+                <div class="calculator__result-block">
+                  <p class="calculator__result-title">Доходность</p>
+                  <p class="calculator__result-value">12,5%</p>
+                </div>
+  
+                <div class="calculator__result-block">
+                  <p class="calculator__result-title">Сумма дохода</p>
+                  <p class="calculator__result-value">282 366 ₽</p>
+                </div>
               </div>
 
-              <div class="calculator__result-block">
-                <p class="calculator__result-title">Сумма дохода</p>
-                <p class="calculator__result-value">282 366 ₽</p>
-              </div>
 
               <div class="calculator__result-block">
                 <p class="calculator__result-title">Итоговая сумма</p>
@@ -394,7 +397,7 @@
       </div>
     </section>
 
-    <section class="possibilities">
+    <section class="possibilities none">
       <div class="container">
         <div class="possibilities__title">
           <h2 class="title">Ваши возможности с Нурфинанс</h2>
@@ -427,7 +430,7 @@
             </div>
           </div>
 
-          <div class="possibilities__chart">
+          <div class="possibilities__chart possibilities__chart_1">
             <p class="possibilities__sub-title possibilities__sub-title_1">
               Получите повышенный доход от вложений
             </p>
@@ -448,18 +451,18 @@
                 <div class="pole pole_3"></div>
               </div>
             </div>
-            <div class="possibilities__chart-names">
+            <div class="possibilities__chart-names possibilities__chart-names_1">
               <div class="cart__name">Банковские вклады</div>
               <div class="cart__name cart__name_blue">Вклады нурфинанс</div>
               <div class="cart__name">Вложения в недвижимость</div>
             </div>
           </div>
-          <div class="possibilities__chart">
+          <div class="possibilities__chart ">
             <p class="possibilities__sub-title possibilities__sub-title_2">
               Инвестируйте со стабильным результатом
             </p>
             <img src="./img/possibilities/Chart.svg" alt="Chart" />
-            <div class="possibilities__chart-names">
+            <div class="possibilities__chart-names possibilities__chart-names_2">
               <p class="possibilities__chart-name">
                 <span class="chart-dot"></span>Фондовый<br />рынок
               </p>
@@ -508,156 +511,156 @@
       </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews none">
       <div class="container">
         <div class="reviews__title">
           <h2 class="title">Отзывы клиентов</h2>
         </div>
       </div>
 
-      <div class="reviews__border">
-        <div class="reviews__inner">
-          <div class="reviews__slider swiper">
-            <div class="reviews-swiper swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="reviews__slider-card">
-                  <img
-                    class="reviews__slider-card-img"
-                    src="./img/reviews/1.png"
-                    alt="Отзыв Евгения Садкова"
-                  />
-                  <img
-                    class="reviews__slider-card-btn"
-                    src="./img/reviews/play-btn.svg"
-                    alt="Video-btn"
-                  />
+      <div class="reviews__wrapper">
+        <div class="reviews__border">
+          <div class="reviews__inner">
+            <div class="reviews__slider swiper">
+              <div class="reviews-swiper swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="reviews__slider-card">
+                    <div class="card-content">
+                      <img
+                        class="reviews__slider-card-img"
+                        src="./img/reviews/1_1.png"
+                        alt="Отзыв Евгения Садкова"
+                      />
+                      <!-- <img class="reviews__slider-card-btn" src="./img/reviews/play-btn.svg" alt="Video-btn" /> -->
+                    </div>
 
-                  <div class="reviews__slider-card-name">Евгений Садков</div>
+                    <div class="reviews__slider-card-name">Евгений Садков</div>
 
-                  <div class="reviews__slider-card-program">
-                    Программа – Экспресс Рассрочка
+                    <div class="reviews__slider-card-program">
+                      Программа – Экспресс Рассрочка
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="swiper-slide">
-                <div class="reviews__slider-card">
-                  <img
-                    class="reviews__slider-card-img"
-                    src="./img/reviews/2.png"
-                    alt="Отзыв Евгения Садкова"
-                  />
-                  <img
-                    class="reviews__slider-card-btn"
-                    src="./img/reviews/play-btn.svg"
-                    alt="Video-btn"
-                  />
+                <div class="swiper-slide">
+                  <div class="reviews__slider-card">
+                    <img
+                      class="reviews__slider-card-img"
+                      src="./img/reviews/2_1.png"
+                      alt="Отзыв Евгения Садкова"
+                    />
+                    <!-- <img
+                      class="reviews__slider-card-btn"
+                      src="./img/reviews/play-btn.svg"
+                      alt="Video-btn"
+                    /> -->
 
-                  <div class="reviews__slider-card-name">Анастасия Майер</div>
+                    <div class="reviews__slider-card-name">Анастасия Майер</div>
 
-                  <div class="reviews__slider-card-program">
-                    Инвестиции – Вклад Активный
+                    <div class="reviews__slider-card-program">
+                      Инвестиции – Вклад Активный
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="swiper-slide">
-                <div class="reviews__slider-card">
-                  <img
-                    class="reviews__slider-card-img"
-                    src="./img/reviews/3.png"
-                    alt="Отзыв Евгения Садкова"
-                  />
-                  <img
-                    class="reviews__slider-card-btn"
-                    src="./img/reviews/play-btn.svg"
-                    alt="Video-btn"
-                  />
+                <div class="swiper-slide">
+                  <div class="reviews__slider-card">
+                    <img
+                      class="reviews__slider-card-img"
+                      src="./img/reviews/3_1.png"
+                      alt="Отзыв Евгения Садкова"
+                    />
+                    <!-- <img
+                      class="reviews__slider-card-btn"
+                      src="./img/reviews/play-btn.svg"
+                      alt="Video-btn"
+                    /> -->
 
-                  <div class="reviews__slider-card-name">Фаниль Гарипов</div>
+                    <div class="reviews__slider-card-name">Фаниль Гарипов</div>
 
-                  <div class="reviews__slider-card-program">
-                    Программа – Авто Рассрочка
+                    <div class="reviews__slider-card-program">
+                      Программа – Авто Рассрочка
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="swiper-slide">
-                <div class="reviews__slider-card">
-                  <img
-                    class="reviews__slider-card-img"
-                    src="./img/reviews/1.png"
-                    alt="Отзыв Евгения Садкова"
-                  />
-                  <img
-                    class="reviews__slider-card-btn"
-                    src="./img/reviews/play-btn.svg"
-                    alt="Video-btn"
-                  />
+                <div class="swiper-slide">
+                  <div class="reviews__slider-card">
+                    <img
+                      class="reviews__slider-card-img"
+                      src="./img/reviews/1_1.png"
+                      alt="Отзыв Евгения Садкова"
+                    />
+                    <!-- <img
+                      class="reviews__slider-card-btn"
+                      src="./img/reviews/play-btn.svg"
+                      alt="Video-btn"
+                    /> -->
 
-                  <div class="reviews__slider-card-name">Евгений Садков</div>
+                    <div class="reviews__slider-card-name">Евгений Садков</div>
 
-                  <div class="reviews__slider-card-program">
-                    Программа – Экспресс Рассрочка
+                    <div class="reviews__slider-card-program">
+                      Программа – Экспресс Рассрочка
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="swiper-slide">
-                <div class="reviews__slider-card">
-                  <img
-                    class="reviews__slider-card-img"
-                    src="./img/reviews/2.png"
-                    alt="Отзыв Евгения Садкова"
-                  />
-                  <img
-                    class="reviews__slider-card-btn"
-                    src="./img/reviews/play-btn.svg"
-                    alt="Video-btn"
-                  />
+                <div class="swiper-slide">
+                  <div class="reviews__slider-card">
+                    <img
+                      class="reviews__slider-card-img"
+                      src="./img/reviews/2_1.png"
+                      alt="Отзыв Евгения Садкова"
+                    />
+                    <!-- <img
+                      class="reviews__slider-card-btn"
+                      src="./img/reviews/play-btn.svg"
+                      alt="Video-btn"
+                    /> -->
 
-                  <div class="reviews__slider-card-name">Анастасия Майер</div>
+                    <div class="reviews__slider-card-name">Анастасия Майер</div>
 
-                  <div class="reviews__slider-card-program">
-                    Инвестиции – Вклад Активный
+                    <div class="reviews__slider-card-program">
+                      Инвестиции – Вклад Активный
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="swiper-slide">
-                <div class="reviews__slider-card">
-                  <img
-                    class="reviews__slider-card-img"
-                    src="./img/reviews/3.png"
-                    alt="Отзыв Евгения Садкова"
-                  />
-                  <img
-                    class="reviews__slider-card-btn"
-                    src="./img/reviews/play-btn.svg"
-                    alt="Video-btn"
-                  />
+                <div class="swiper-slide">
+                  <div class="reviews__slider-card">
+                    <img
+                      class="reviews__slider-card-img"
+                      src="./img/reviews/3_1.png"
+                      alt="Отзыв Евгения Садкова"
+                    />
+                    <!-- <img
+                      class="reviews__slider-card-btn"
+                      src="./img/reviews/play-btn.svg"
+                      alt="Video-btn"
+                    /> -->
 
-                  <div class="reviews__slider-card-name">Фаниль Гарипов</div>
+                    <div class="reviews__slider-card-name">Фаниль Гарипов</div>
 
-                  <div class="reviews__slider-card-program">
-                    Программа – Авто Рассрочка
+                    <div class="reviews__slider-card-program">
+                      Программа – Авто Рассрочка
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="reviews-button-prev"></div>
-          <div class="reviews-button-next"></div>
-          <div class="reviews__btn">
-            <button href="#" class="reviews__more">
-              Смотреть больше отзывов
-            </button>
+            <div class="reviews-button-prev"></div>
+            <div class="reviews-button-next"></div>
+            <div class="reviews__btn">
+              <button href="#" class="reviews__more">
+                Смотреть больше отзывов
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="useful-info">
+    <section class="useful-info none">
       <div class="container">
         <div class="useful-info__title">
           <h2 class="title">Полезная информация</h2>
@@ -745,7 +748,7 @@
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer none">
       <div class="container">
         <div class="footer__wrapper">
           <a href="#">

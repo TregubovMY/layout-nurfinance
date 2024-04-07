@@ -1,6 +1,25 @@
 .reviews {
   margin-bottom: 124px;
 
+  @include mediaMobile {
+    margin-bottom: 70px;
+  }
+
+  &__swiper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__wrapper {
+    max-width: 1428px;
+    padding: 0 50px;
+    margin: 0 auto;
+
+    @include mediaMobile {
+      padding: 0;
+    }
+  }
+
   &__border {
     position: relative;
 
@@ -10,11 +29,24 @@
     border-radius: 120px 6px 120px 6px;
 
     margin: 0 auto;
+
+    @include mediaMobile {
+      background: $color-white;
+      padding: 0 5px;
+    }
   }
 
   &__inner {
     margin: 0 auto;
     padding: 60px 60px 15px 60px;
+
+    @include mediaMobile {
+      padding: 0 10px;
+    }
+
+    @include mediaTablet {
+      padding: 10px 10px 5px 10px;
+    }
   }
 
   &__title {
@@ -27,6 +59,9 @@
 
   &__slider-card {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &-img {
       margin-bottom: 25px;
@@ -35,8 +70,14 @@
 
     &-btn {
       position: absolute;
-      top: 0;
+      top: -10px;
       right: 0;
+    }
+
+    @include mediaMobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 
@@ -44,12 +85,20 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 140%;
+
+    @include mediaMobile {
+      font-size: 16px;
+    }
   }
 
   &__slider-card-program {
     color: $color-muted;
     font-size: 16px;
     line-height: 140%;
+
+    @include mediaMobile {
+      font-size: 14px;
+    }
   }
 
   &__more {
@@ -58,9 +107,13 @@
     border-radius: 20px 0px 20px 0px;
     background: $color-white;
     padding: 15px 100px;
+
+    @include mediaMobile {
+      background-color: $color-hf;
+    }
   }
 
-  &__btn{
+  &__btn {
     max-width: 405px;
     margin: 0 auto;
   }

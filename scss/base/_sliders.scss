@@ -7,6 +7,10 @@
   height: 40px;
   z-index: 9;
   background-image: url("../img/sliders/header-button-prev.svg");
+
+  @include mediaTablet {
+    @include visibility-hidden;
+  }
 }
 
 .header-button-next {
@@ -18,6 +22,10 @@
   height: 40px;
   z-index: 9;
   background-image: url("../img/sliders/header-button-next.svg");
+
+  @include mediaTablet {
+    @include visibility-hidden;
+  }
 }
 
 .reviews-button-prev {
@@ -29,6 +37,10 @@
   height: 80px;
   z-index: 9;
   background-image: url("../img/sliders/reviews-button-prev.svg");
+
+  @include mediaMobile {
+    @include visibility-hidden;
+  }
 }
 
 .reviews-button-next {
@@ -40,18 +52,26 @@
   height: 80px;
   z-index: 9;
   background-image: url("../img/sliders/reviews-button-next.svg");
+
+  @include mediaMobile {
+    @include visibility-hidden;
+  }
 }
 
-.header__slider .swiper-pagination{
+.header__slider .swiper-pagination {
   z-index: 5;
   bottom: 123px !important;
   left: 40% !important;
   transform: translate(-50%, 0) !important;
+
+  @include mediaTablet {
+    bottom: -20px !important;
+  }
 }
 
-.header__slider .swiper-pagination-bullet{
+.header__slider .swiper-pagination-bullet {
   background-color: #5e6063;
 }
-.header__slider .swiper-pagination-bullet-active{
+.header__slider .swiper-pagination-bullet-active {
   background-color: $color-blue;
 }

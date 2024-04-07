@@ -6,10 +6,29 @@
     display: grid;
     gap: 70px;
     grid-template-columns: 265px 1fr;
+
+    @include mediaMobile {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
   }
 
   &__logo {
     max-height: 32px;
+
+    @include mediaMobile {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      -webkit-clip-path: inset(100%);
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
   }
 
   &__search-bar {
@@ -77,6 +96,15 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 60px;
+
+    @include mediaTablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__nav-column {
