@@ -22,7 +22,7 @@
     }
 
     @include mediaMobile {
-        font-size: 16px;
+      font-size: 16px;
     }
   }
 
@@ -48,21 +48,20 @@
 
     @include mediaTablet {
       display: flex;
-      gap: 40px;
       grid-area: 1 / 1 / 2 / 3;
+      gap: 40px;
     }
 
     @include mediaMobile {
+      grid-area: 2 / 1 / 2 / 1;
       flex-direction: column;
       gap: 10px;
-
-      grid-area: 2 / 1 / 2 / 1;
     }
   }
 
   &__info-block {
-    position: relative;
     display: flex;
+    position: relative;
     gap: 15px;
     margin-bottom: 25px;
 
@@ -72,11 +71,11 @@
   }
 
   &__info-block-title {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 140%;
     display: flex;
     align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
   }
 
   &__chart {
@@ -96,7 +95,7 @@
       display: flex;
       gap: 40px;
 
-      &_2{
+      &_2 {
         margin-top: 10px;
         margin-left: 20px;
       }
@@ -114,9 +113,9 @@
     }
 
     @include mediaMobile {
-        &_1{
-          grid-area: 1 / 1 / 1 / 1;
-        }
+      &_1 {
+        grid-area: 1 / 1 / 1 / 1;
+      }
     }
   }
 
@@ -124,16 +123,15 @@
     margin-top: 70px;
 
     @include mediaTablet {
-      margin-top: 0;
-      justify-self: center;
       grid-area: 4 / 1 / 4 / 3;
+      justify-self: center;
+      margin-top: 0;
     }
 
     @include mediaMobile {
+      grid-area: 5 / 1 / 5 / 1;
       width: 100%;
 
-      grid-area: 5 / 1 / 5 / 1;
-      
       button {
         width: 100%;
       }
@@ -153,9 +151,9 @@
   }
 
   &__return-title {
+    margin: 10px 0;
     font-size: 16px;
     line-height: 120%;
-    margin: 10px 0;
 
     span {
       font-weight: 700;
@@ -177,8 +175,8 @@
   }
 
   &_2 {
-    height: 105px;
     background: $color-blue;
+    height: 105px;
   }
 
   &_3 {
@@ -193,8 +191,8 @@
 
   &__title {
     color: rgb(124, 131, 161);
-    font-size: 30px;
     font-weight: 700;
+    font-size: 30px;
 
     @include mediaMobile {
       font-size: 24px;
@@ -225,10 +223,10 @@
 
 .chart-dot {
   display: block;
-  width: 10px;
-  height: 10px;
   border-radius: 50%;
   background: #6e9bb8;
+  width: 10px;
+  height: 10px;
 
   &_blue {
     background: $color-blue;
@@ -236,14 +234,14 @@
 }
 
 .possibilities__return__separating-line {
-  max-width: 840px;
-  height: 1px;
   background: linear-gradient(
     180deg,
     rgba(198, 217, 233, 0),
     rgb(198, 217, 233) 49.479%,
     rgba(198, 217, 233, 0) 100%
   );
+  max-width: 840px;
+  height: 1px;
 
   @include mediaTablet {
     max-width: 100%;
@@ -259,21 +257,19 @@
     grid-template-columns: 1fr;
     gap: 20px;
   }
-
 }
 
 .possibilities__return-subtitle {
   @include ico-left("../img/possibilities/CheckCircle.svg");
+  margin-bottom: 5px;
+  padding-left: 30px;
   color: rgb(124, 131, 161);
   font-weight: 700;
   line-height: 120%;
-  padding-left: 30px;
-  margin-bottom: 5px;
 
   @include mediaMobile {
     font-size: 14px;
   }
-
 
   &::before {
     width: 20px;

@@ -1,12 +1,12 @@
 .header-button-prev {
   position: absolute;
-  content: "";
-  left: calc(50% + 540px);
   bottom: 120px;
-  width: 40px;
-  height: 40px;
+  left: calc(50% + 540px);
   z-index: 9;
   background-image: url("../img/sliders/header-button-prev.svg");
+  width: 40px;
+  height: 40px;
+  content: "";
 
   @include mediaTablet {
     @include visibility-hidden;
@@ -15,13 +15,13 @@
 
 .header-button-next {
   position: absolute;
-  content: "";
-  left: calc(50% + 590px);
   bottom: 120px;
-  width: 40px;
-  height: 40px;
+  left: calc(50% + 590px);
   z-index: 9;
   background-image: url("../img/sliders/header-button-next.svg");
+  width: 40px;
+  height: 40px;
+  content: "";
 
   @include mediaTablet {
     @include visibility-hidden;
@@ -30,13 +30,13 @@
 
 .reviews-button-prev {
   position: absolute;
-  content: "";
-  left: -40px;
   top: 30%;
-  width: 80px;
-  height: 80px;
+  left: -40px;
   z-index: 9;
   background-image: url("../img/sliders/reviews-button-prev.svg");
+  width: 80px;
+  height: 80px;
+  content: "";
 
   @include mediaMobile {
     @include visibility-hidden;
@@ -45,13 +45,13 @@
 
 .reviews-button-next {
   position: absolute;
-  content: "";
-  right: -40px;
   top: 30%;
-  width: 80px;
-  height: 80px;
+  right: -40px;
   z-index: 9;
   background-image: url("../img/sliders/reviews-button-next.svg");
+  width: 80px;
+  height: 80px;
+  content: "";
 
   @include mediaMobile {
     @include visibility-hidden;
@@ -59,10 +59,10 @@
 }
 
 .header__slider .swiper-pagination {
-  z-index: 5;
   bottom: 123px !important;
   left: 40% !important;
   transform: translate(-50%, 0) !important;
+  z-index: 5;
 
   @include mediaTablet {
     bottom: -20px !important;

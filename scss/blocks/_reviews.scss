@@ -11,9 +11,9 @@
   }
 
   &__wrapper {
-    max-width: 1428px;
-    padding: 0 50px;
     margin: 0 auto;
+    padding: 0 50px;
+    max-width: 1428px;
 
     @include mediaMobile {
       padding: 0;
@@ -23,12 +23,12 @@
   &__border {
     position: relative;
 
-    max-width: 1368px;
-    padding: 0 20px;
-    background: $color-hf;
-    border-radius: 120px 6px 120px 6px;
-
     margin: 0 auto;
+    border-radius: 120px 6px 120px 6px;
+    background: $color-hf;
+    padding: 0 20px;
+
+    max-width: 1368px;
 
     @include mediaMobile {
       background: $color-white;
@@ -58,8 +58,8 @@
   }
 
   &__slider-card {
-    position: relative;
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
 
@@ -82,8 +82,8 @@
   }
 
   &__slider-card-name {
-    font-size: 18px;
     font-weight: 700;
+    font-size: 18px;
     line-height: 140%;
 
     @include mediaMobile {
@@ -114,7 +114,7 @@
   }
 
   &__btn {
-    max-width: 405px;
     margin: 0 auto;
+    max-width: 405px;
   }
 }

@@ -2,56 +2,57 @@ $inactive-color: #f0f4f8;
 $inactive-border-color: #c6d9e9;
 
 .radiobtn {
-  position: relative;
   display: block;
+  position: relative;
 
   label {
     display: block;
-    background: $inactive-color;
-    border-radius: 20px 0;
-    padding: 13px 70px 13px 45px;
-    border: 2px solid $inactive-border-color;
-    margin-bottom: 5px;
     cursor: pointer;
+    margin-bottom: 5px;
+    border: 2px solid $inactive-border-color;
+    border-radius: 20px 0;
+    background: $inactive-color;
+    padding: 13px 70px 13px 45px;
 
     &:after,
     &:before {
-      content: "";
       position: absolute;
-      left: 15px;
       top: 15px;
-      width: 20px;
-      height: 20px;
+      left: 15px;
       border: 2px solid $inactive-border-color;
       border-radius: 2px;
       background: $inactive-color;
+      width: 20px;
+      height: 20px;
+      content: "";
     }
 
     &:before {
-      background: transparent;
-      transition: 0.1s width cubic-bezier(0.075, 0.82, 0.165, 1) 0s,
-        0.3s height cubic-bezier(0.075, 0.82, 0.165, 2) 0.1s;
       z-index: 2;
-      overflow: hidden;
-      background-repeat: no-repeat;
-      background-size: 13px;
+      transition:
+        0.1s width cubic-bezier(0.075, 0.82, 0.165, 1) 0s,
+        0.3s height cubic-bezier(0.075, 0.82, 0.165, 2) 0.1s;
+      background: transparent;
+      background-image: url("../img/Check.svg");
       background-position: center;
+      background-size: 13px;
+      background-repeat: no-repeat;
       width: 0;
       height: 0;
-      background-image: url("../img/Check.svg");
+      overflow: hidden;
     }
 
     @include mediaMobile {
-      font-size: 14px;
       padding: 13px 20px 13px 45px;
+      font-size: 14px;
     }
   }
 
   input[type="radio"] {
     display: none;
     position: absolute;
-    width: 100%;
     appearance: none;
+    width: 100%;
 
     &:checked + label {
       background: $color-white;

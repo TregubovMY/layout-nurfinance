@@ -3,18 +3,17 @@
   padding-left: 20px;
 
   &::before {
-    content: "";
-
     position: absolute;
-    left: 0px;
     top: 50%;
-    width: 16px;
-    height: 16px;
+    left: 0px;
     transform: translate(0, -50%);
 
     background-image: url($icon-path);
-    background-repeat: no-repeat;
     background-position: center center;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    content: "";
   }
 }
 
@@ -23,18 +22,17 @@
   padding-right: 20px;
 
   &::after {
-    content: "";
-
     position: absolute;
-    right: 0px;
     top: 50%;
-    width: 16px;
-    height: 16px;
+    right: 0px;
     transform: translate(0, -50%);
 
     background-image: url($icon-path);
-    background-repeat: no-repeat;
     background-position: center center;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    content: "";
   }
 }
 
@@ -52,14 +50,14 @@
 
 @mixin visibility-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
   margin: -1px;
   border: 0;
   padding: 0;
+  width: 1px;
+  height: 1px;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
