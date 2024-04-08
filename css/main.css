@@ -1227,6 +1227,9 @@ a:hover {
   max-width: 405px;
 }
 
+.calculator {
+  margin-bottom: 50px;
+}
 .calculator__header {
   position: relative;
 }
