@@ -3,10 +3,10 @@
 
   &__card {
     position: relative;
-    background: $color-hf;
     border: 1px solid #ddd;
-    padding: 25px 30px;
     border-radius: 10px;
+    background: $color-hf;
+    padding: 25px 30px;
   }
 
   &__list {
@@ -18,9 +18,9 @@
       @include ico-left("../img/useful-info/CaretRight.svg");
 
       &::before {
+        transform: translate(-50%, -50%);
         width: 32px;
         height: 32px;
-        transform: translate(-50%, -50%);
       }
     }
 
@@ -28,16 +28,15 @@
       font-weight: 700;
 
       @include mediaMobile {
-          font-size: 14px;
+        font-size: 14px;
       }
     }
   }
 
   &__card-title {
-    font-size: 22px;
-    font-weight: 700;
-
     margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 22px;
 
     @include mediaMobile {
       font-size: 18px;
@@ -45,9 +44,8 @@
   }
 
   &__upon-title {
-    color: $color-muted;
-
     margin-bottom: 10px;
+    color: $color-muted;
 
     @include mediaMobile {
       font-size: 14px;

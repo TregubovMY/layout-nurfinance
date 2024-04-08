@@ -1,6 +1,52 @@
 .header {
   background-color: $color-hf;
 
+  &__logo {
+    @include mediaTablet {
+      grid-area: 1/2/1/4;
+
+      justify-self: center;
+
+      img {
+        padding-right: 45px;
+        height: 32px;
+      }
+    }
+
+    @media screen and (max-width: $screen-xs) {
+      grid-area: 1/2/1/3;
+
+      img {
+        padding-right: 0;
+      }
+    }
+  }
+
+  &__search {
+    @include mediaTablet {
+      grid-area: 2/1/2/4;
+      justify-self: end;
+    }
+    @media screen and (max-width: $screen-xs) {
+      display: none;
+    }
+  }
+
+  &__mobile-btn {
+    display: none;
+
+    @include mediaTablet {
+      display: block;
+      grid-area: 1/1/1/4;
+
+      justify-self: end;
+      margin: 0;
+      padding: 8px;
+      max-width: 124px;
+      font-size: 12px;
+    }
+  }
+
   &__upon {
     display: flex;
     justify-content: space-between;
@@ -30,12 +76,16 @@
       background: $color-white;
       padding: 3px;
     }
+
+    @include mediaTablet {
+      display: none;
+    }
   }
 
   &__separating-line {
+    background-color: $color-muted;
     max-width: 1245px;
     height: 1px;
-    background-color: $color-muted;
   }
 
   &__top-row {
@@ -43,24 +93,60 @@
     justify-content: space-between;
     align-items: center;
     margin: 30px 0 50px;
+
+    @include mediaTablet {
+      display: grid;
+      grid-template: 1fr 1fr / 35px 1fr 130px;
+      justify-items: space-between;
+      gap: 10px;
+    }
   }
 
   &__nav {
     display: flex;
-    gap: 29px;
     align-items: center;
+    gap: 29px;
     padding: 0 50px;
+
+    @include mediaTablet {
+      grid-area: 2/1/2/4;
+      gap: 10px;
+      padding: 0;
+    }
+
+    justify-self: center;
+    @media screen and (max-width: $screen-xs) {
+    }
   }
 
   &__tel {
-    font-size: 16px;
     font-weight: 700;
+    font-size: 16px;
     line-height: 110%;
 
     @include ico-left("./../img/header/Phone.svg");
+
+    @include mediaTablet {
+      display: none;
+    }
+  }
+
+  &__buttons {
+    @include mediaTablet {
+      display: none;
+    }
   }
 }
 
 .map-ico {
   @include ico-right("./../img/header/Map.svg");
+}
+
+.header__nav-btn {
+  display: none;
+
+  @include mediaTablet {
+    display: block;
+    grid-area: 1/1/1/3;
+  }
 }
