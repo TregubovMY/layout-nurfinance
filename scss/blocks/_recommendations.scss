@@ -29,7 +29,7 @@
 .product-cart {
   border-radius: 10px;
   background-color: $color-hf;
-  padding: 32px 5px 38px 40px;
+  padding: 32px 15px 38px 40px;
 
   &__container {
     display: flex;
@@ -68,6 +68,10 @@
     color: $color-blue;
     font-weight: 700;
     font-size: 36px;
+
+    @include mediaTablet {
+      font-size: 24px;
+    }
   }
 
   &__info {
@@ -92,7 +96,7 @@
 
     @include mediaMobile {
       grid-column: 1 / span 1;
-      background-position: left calc(50% + 225px) bottom 0;
+      background-position: left calc(50% + 175px) bottom 0;
     }
   }
 
@@ -125,7 +129,17 @@
 
     @include mediaMobile {
       grid-column: 1 / span 1;
-      background-position: left calc(50% + 225px) bottom 0;
+      background-position: left calc(50% + 155px) bottom 0;
     }
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  @include mediaMobile {
+    background-image: none;
   }
 }

@@ -55,6 +55,14 @@
   @include mediaMobile {
     padding-bottom: 40px;
   }
+
+  .buttons {
+    @include mediaTablet {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
 }
 .header__slider-title {
   margin-bottom: 23px;

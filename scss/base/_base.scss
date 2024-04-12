@@ -49,11 +49,14 @@ a {
 }
 
 .btn-1 {
-  margin-right: 15px;
   border-radius: 20px 0px 20px 0px;
   background: $color-blue;
   padding: 14px 25px;
   color: $color-white;
+
+  @include mediaTablet {
+    width: 100%;
+  }
 }
 
 .btn-2 {
@@ -61,6 +64,10 @@ a {
   background: $color-white;
   padding: 14px 25px;
   color: $color-blue;
+
+  @include mediaTablet {
+    width: 100%;
+  }
 }
 
 @include mediaMobile {

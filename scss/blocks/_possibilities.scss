@@ -168,7 +168,7 @@
 .pole {
   border-radius: 18px 0 18px 0;
   background: $color-hf;
-  width: 95px;
+  max-width: 95px;
 
   &_1 {
     height: 33px;

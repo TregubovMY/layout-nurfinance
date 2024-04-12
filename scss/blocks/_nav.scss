@@ -12,14 +12,6 @@
         height: 32px;
       }
     }
-
-    @media screen and (max-width: $screen-xs) {
-      grid-area: 1/2/1/3;
-
-      img {
-        padding-right: 0;
-      }
-    }
   }
 
   &__search {
@@ -44,6 +36,10 @@
       padding: 8px;
       max-width: 124px;
       font-size: 12px;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+      display: none;
     }
   }
 
@@ -132,6 +128,10 @@
   }
 
   &__buttons {
+    .btn-1 {
+      margin-right: 10px;
+    }
+    
     @include mediaTablet {
       display: none;
     }
